@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+torch
+flask
+torchmetrics
+torchvision
+Pillow
+torchinfo
+tqdm
