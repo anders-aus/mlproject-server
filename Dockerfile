@@ -5,12 +5,8 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 
 RUN apt-get update && \
-    apt-get install -y \
-    libssl-dev \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
-RUN pip3 install cmake
+    apt-get install -y build-essential cmake libssl-dev && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install -r requirements.txt
 
